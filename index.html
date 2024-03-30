@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>To-do List </h1>
+  <div class="container">
+    <!-- Section 1: Add Item -->
+    <div class="add-item">
+      <input type="text" id="itemName" placeholder="Item Name">
+      <input type="date" id="itemDate" placeholder="yyyy/mm/dd">
+      <select id="priority">
+        <option value="" disabled selected hidden>Priority</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Section 2: Today's Tasks -->
+    <div class="task-section">
+      <h2>Today's TodoList</h2>
+      <div id="todayTasks" class="task-list"></div>
+    </div>
+
+    <!-- Section 3: Future Tasks -->
+    <div class="task-section">
+      <h2>Future TodoList</h2>
+      <div id="futureTasks" class="task-list"></div>
+    </div>
+
+    <!-- Section 4: Completed Tasks -->
+    <div class="task-section">
+      <h2>Completed TodoList</h2>
+      <div id="completedTasks" class="task-list"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

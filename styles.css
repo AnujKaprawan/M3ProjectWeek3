@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(185, 179, 179);
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;    
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgb(216, 198, 176);
+}
+
+/* CSS for text input */
+.add-item input[type="text"] {
+  width: 250px;
+  font-size: 16px; 
+  padding: 6px 5px; 
+  margin-left: 5px;
+}
+
+/* CSS for date input */
+.add-item input[type="date"] {
+  width: 250px;
+  font-size: 16px; 
+  padding: 5px; 
+}
+
+/* CSS for select dropdown */
+.add-item select {
+  width: 200px;
+  font-size: 16px; 
+  padding: 7px 15px; 
+}  
+
+
+.add-item {
+  margin-bottom: 5px;
+}
+
+.add-item button {
+  font-size: 16px; /* Font size for the button */
+  padding: 5px; /* Padding for the button (10px top/bottom, 20px left/right) */
+  background-color: black; /* Background color for the button */
+  color: white; /* Text color for the button */
+  width: 140px; 
+}
+
+.task-section {
+  margin-bottom: 20px;
+}
+
+.task-list {
+  padding: 10px;
+}
+
+.task-item {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.task-item.completed {
+  background-color: rgb(167, 160, 160);
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.task-item.past-deadline {
+  border-color: red;
+  border-radius: 10px;
+}
+
+.task-item span {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.check-icon {
+  margin-left: 0px; 
+}
+
+.trash-icon {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
